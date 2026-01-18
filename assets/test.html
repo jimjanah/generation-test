@@ -10,79 +10,49 @@
   <div class="container">
     <div class="card">
       <h1>Le test (10 questions)</h1>
-      <p class="small">Réponds vite, sans trop réfléchir. Puis clique sur “Voir mon résultat”.</p>
+      <p class="small">Réponds au feeling. Résultat immédiat.</p>
       <hr>
 
       <form id="quiz">
 
         <div class="q">
           <h2>1) Le travail, pour toi, c’est surtout :</h2>
-          <label class="choice"><input type="radio" name="q1" value="A" required> Une valeur et une fierté</label>
-          <label class="choice"><input type="radio" name="q1" value="B"> Un moyen de vivre</label>
-          <label class="choice"><input type="radio" name="q1" value="C"> Un mal nécessaire</label>
+          <label class="choice"><input type="radio" name="q1" value="A" required> Une valeur</label>
+          <label class="choice"><input type="radio" name="q1" value="B"> Un moyen</label>
+          <label class="choice"><input type="radio" name="q1" value="C"> Une contrainte</label>
+          <label class="choice"><input type="radio" name="q1" value="D"> Un outil temporaire</label>
         </div>
 
         <div class="q">
-          <h2>2) Sans téléphone pendant 24h :</h2>
+          <h2>2) Sans téléphone 24h :</h2>
           <label class="choice"><input type="radio" name="q2" value="A" required> Aucun souci</label>
-          <label class="choice"><input type="radio" name="q2" value="B"> Gênant mais faisable</label>
-          <label class="choice"><input type="radio" name="q2" value="C"> Très compliqué</label>
+          <label class="choice"><input type="radio" name="q2" value="B"> Gênant</label>
+          <label class="choice"><input type="radio" name="q2" value="C"> Très dur</label>
+          <label class="choice"><input type="radio" name="q2" value="D"> Impossible</label>
         </div>
 
         <div class="q">
           <h2>3) L’autorité :</h2>
           <label class="choice"><input type="radio" name="q3" value="A" required> Nécessaire</label>
           <label class="choice"><input type="radio" name="q3" value="B"> À discuter</label>
-          <label class="choice"><input type="radio" name="q3" value="C"> Souvent dépassée</label>
+          <label class="choice"><input type="radio" name="q3" value="C"> Dépassée</label>
+          <label class="choice"><input type="radio" name="q3" value="D"> Inutile</label>
         </div>
 
         <div class="q">
-          <h2>4) L’argent, c’est :</h2>
-          <label class="choice"><input type="radio" name="q4" value="A" required> La sécurité</label>
-          <label class="choice"><input type="radio" name="q4" value="B"> La liberté</label>
-          <label class="choice"><input type="radio" name="q4" value="C"> Le plaisir immédiat</label>
+          <h2>4) L’argent :</h2>
+          <label class="choice"><input type="radio" name="q4" value="A" required> Sécurité</label>
+          <label class="choice"><input type="radio" name="q4" value="B"> Liberté</label>
+          <label class="choice"><input type="radio" name="q4" value="C"> Pouvoir</label>
+          <label class="choice"><input type="radio" name="q4" value="D"> Stress</label>
         </div>
 
         <div class="q">
-          <h2>5) Apprendre aujourd’hui :</h2>
-          <label class="choice"><input type="radio" name="q5" value="A" required> Par l’expérience</label>
-          <label class="choice"><input type="radio" name="q5" value="B"> Par la pratique</label>
-          <label class="choice"><input type="radio" name="q5" value="C"> En ligne</label>
-        </div>
-
-        <div class="q">
-          <h2>6) Ton rythme idéal :</h2>
-          <label class="choice"><input type="radio" name="q6" value="A" required> Stable</label>
-          <label class="choice"><input type="radio" name="q6" value="B"> Équilibré</label>
-          <label class="choice"><input type="radio" name="q6" value="C"> Rapide</label>
-        </div>
-
-        <div class="q">
-          <h2>7) Les traditions :</h2>
-          <label class="choice"><input type="radio" name="q7" value="A" required> À préserver</label>
-          <label class="choice"><input type="radio" name="q7" value="B"> À adapter</label>
-          <label class="choice"><input type="radio" name="q7" value="C"> À oublier</label>
-        </div>
-
-        <div class="q">
-          <h2>8) Réussir sa vie, c’est :</h2>
-          <label class="choice"><input type="radio" name="q8" value="A" required> Construire sur le long terme</label>
-          <label class="choice"><input type="radio" name="q8" value="B"> Trouver l’équilibre</label>
-          <label class="choice"><input type="radio" name="q8" value="C"> Profiter maintenant</label>
-        </div>
-
-        <div class="q">
-          <h2>9) Face aux difficultés :</h2>
-          <label class="choice"><input type="radio" name="q9" value="A" required> On encaisse</label>
-          <label class="choice"><input type="radio" name="q9" value="B"> On s’adapte</label>
-          <label class="choice"><input type="radio" name="q9" value="C"> On évite</label>
-        </div>
-
-        <div class="q">
-          <h2>10) Le futur :</h2>
-          <label class="choice"><input type="radio" name="q10" value="A" required> On le prépare</label>
-          <label class="choice"><input type="radio" name="q10" value="B"> On s’y adapte</label>
-          <label class="choice"><input type="radio" name="q10" value="C"> On improvise</label>
+          <h2>5) Les traditions :</h2>
+          <label class="choice"><input type="radio" name="q5" value="A" required> À préserver</label>
+          <label class="choice"><input type="radio" name="q5" value="B"> À adapter</label>
+          <label class="choice"><input type="radio" name="q5" value="C"> À réinventer</label>
+          <label class="choice"><input type="radio" name="q5" value="D"> À oublier</label>
         </div>
 
         <button class="btn" type="submit">Voir mon résultat</button>
@@ -94,19 +64,18 @@
   <script>
     document.getElementById("quiz").addEventListener("submit", function(e){
       e.preventDefault();
-
       const data = new FormData(e.target);
-      let A=0,B=0,C=0;
+      let A=0,B=0,G=0;
 
       for (const [,v] of data.entries()){
         if(v==="A") A++;
         else if(v==="B") B++;
-        else C++;
+        else G++;
       }
 
-      let target = "/resultat/transition.html";
-      if (A >= B && A >= C) target = "/resultat/ancienne-ecole.html";
-      else if (C >= A && C >= B) target = "/resultat/generation-2025.html";
+      let target="/resultat/transition.html";
+      if(A>=B && A>=G) target="/resultat/ancienne-ecole.html";
+      else if(G>=A && G>=B) target="/resultat/generation-2025.html";
 
       window.location.href = target;
     });
