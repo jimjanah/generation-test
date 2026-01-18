@@ -81,4 +81,35 @@
         <div class="q">
           <h2>10) Le futur :</h2>
           <label class="choice"><input type="radio" name="q10" value="A" required> On le prépare</label>
-          <label class="choice"><input type="
+          <label class="choice"><input type="radio" name="q10" value="B"> On s’y adapte</label>
+          <label class="choice"><input type="radio" name="q10" value="C"> On improvise</label>
+        </div>
+
+        <button class="btn" type="submit">Voir mon résultat</button>
+        <a class="btn secondary" href="/" style="margin-left:10px;">Retour</a>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("quiz").addEventListener("submit", function(e){
+      e.preventDefault();
+
+      const data = new FormData(e.target);
+      let A=0,B=0,C=0;
+
+      for (const [,v] of data.entries()){
+        if(v==="A") A++;
+        else if(v==="B") B++;
+        else C++;
+      }
+
+      let target = "/resultat/transition.html";
+      if (A >= B && A >= C) target = "/resultat/ancienne-ecole.html";
+      else if (C >= A && C >= B) target = "/resultat/generation-2025.html";
+
+      window.location.href = target;
+    });
+  </script>
+</body>
+</html>
